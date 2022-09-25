@@ -4,10 +4,14 @@ html {
   background-color: #141820;
 }
 
-a, h1, p, li {
+a, h1, p, li, h1, h2, h3{
   text-decoration: none;
   color: #f1f1f1; 
   list-style-type: none; 
+}
+
+h2 {
+    font-size: 1rem;
 }
 
 li {

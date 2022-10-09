@@ -33,8 +33,8 @@ nav{
 
 .circle {
     border-radius: 50%;
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -73,14 +73,14 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 200px;
-    margin-left: 200px;
+    /* margin-right: 200px;
+    margin-left: 200px; */
     margin-top: 300px;
 }
 
 .Skill {
     background-color: #2b3343;
-    width: 500px;
+    width: 100%;
     height: 600px;
     border-radius: 10%;
     overflow: hidden;
@@ -173,3 +173,75 @@ nav{
     margin-right: 16px;
     margin-bottom: 16px;
 }
+
+
+@media only screen and (max-width: 1025px) {
+
+    .aboutMe{
+        flex-direction: column;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .left{
+        margin: 0 auto;
+    }
+
+    .right{
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .Skill{
+        margin: 0 auto;
+    }
+
+    .skills{
+        flex-direction: column; 
+        gap: 50px;
+        justify-content: center;
+    }
+
+    html{
+        margin: 0 auto;
+        padding: 0px;
+    }
+    
+
+
+  }
+
+
+  @media only screen and (max-width: 426px) {
+
+    body{
+        margin: 0px;
+    }
+
+
+
+    .fullName{
+        flex-direction: column;
+    }
+
+    .right{
+        width: 90%;
+    }
+
+  }
+
+  @media only screen and (min-width: 427px) {
+
+    .circle{
+        width: 60%;
+        height: 60%;
+        margin-left: 20%;
+    }
+
+    .skills{
+        flex-direction: row;
+    }
+
+
+
+  }

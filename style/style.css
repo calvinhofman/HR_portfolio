@@ -33,8 +33,8 @@ nav{
 
 .circle {
     border-radius: 50%;
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 60%;
     object-fit: cover;
 }
 
@@ -80,7 +80,7 @@ nav{
 
 .Skill {
     background-color: #2b3343;
-    width: 100%;
+    width: 40%;
     height: 600px;
     border-radius: 10%;
     overflow: hidden;
@@ -143,6 +143,10 @@ nav{
     margin-bottom: 100px;
 }
 
+form{
+    width: 550px;
+}
+
 .fullName {
     display: flex;
     justify-content: space-between;
@@ -159,6 +163,10 @@ nav{
 .btn{
     color: black;
     font-size: 1.5rem;
+}
+
+.message{
+    width: 99.5%;
 }
 
 .progress {
@@ -197,7 +205,7 @@ nav{
     }
 
     .skills{
-        flex-direction: column; 
+        flex-direction: row; 
         gap: 50px;
         justify-content: center;
     }
@@ -212,13 +220,11 @@ nav{
   }
 
 
-  @media only screen and (max-width: 426px) {
+  @media only screen and (max-width: 570px) {
 
     body{
         margin: 0px;
     }
-
-
 
     .fullName{
         flex-direction: column;
@@ -228,9 +234,52 @@ nav{
         width: 90%;
     }
 
+    .skills{
+        flex-direction: column!important;
+    }
+
+    .Skill {
+        background-color: #2b3343;
+        width: 85%;
+        height: 600px;
+        border-radius: 10%;
+        overflow: hidden;
+    }
+
+    .form {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+    
+    form{
+        width: 350px;
+    }
+
+    .firstName{
+        margin-top: 10px;
+    }
+
+    input{
+        width: 98%;
+    }
+
+    .lastName{
+        margin-top: 10px;
+    }
+
+    .email {
+        margin-top: 10px;
+    }
+
+    .progressBlue{
+        width: 70%!important;
+    }
+
   }
 
-  @media only screen and (min-width: 427px) {
+  @media only screen and (max-width: 768px) {
 
     .circle{
         width: 60%;

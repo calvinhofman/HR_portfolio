@@ -10,6 +10,16 @@ a, h1, p, li, h1, h2, h3{
   list-style-type: none; 
 }
 
+input:not(:placeholder-shown) {
+    border-color: green;
+  }
+
+  textarea:not(:placeholder-shown) {
+    border-color: green;
+  }
+  
+  
+
 h2 {
     font-size: 1rem;
 }
